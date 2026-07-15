@@ -8,9 +8,9 @@
 
 # Social Profiles
 social:
-  email: "ishita@example.com"
-  github: "https://github.com/ishita"
-  linkedin: "https://linkedin.com/in/ishita"
+  email: "ishitatiwari51@gmail.com"
+  github: "https://github.com/IshitaTiwari2003"
+  linkedin: "https://www.linkedin.com/in/ishitatiwari27"
   medium: ""
   twitter: ""
   website: ""

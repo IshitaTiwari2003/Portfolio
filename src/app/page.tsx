@@ -19,13 +19,13 @@ export default function Home() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10 lg:gap-12 items-start">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-14 lg:gap-16 items-start">
         <FadeIn direction="left">
-          <div className="space-y-8">
-            <div className="space-y-4">
+          <div className="space-y-10">
+            <div className="space-y-6">
               <span className="section-label">About</span>
-              <div className="space-y-5">
+              <div className="space-y-6">
                 {detail.about.map((paragraph, index) => (
                   <p key={index} className="text-gray-600 dark:text-gray-400 leading-relaxed text-lg">
                     {paragraph}
@@ -35,9 +35,9 @@ export default function Home() {
             </div>
 
             <FadeIn delay={0.2}>
-              <div className="space-y-4">
+              <div className="space-y-5">
                 <span className="section-label">Now</span>
-                <ul className="space-y-3">
+                <ul className="space-y-4">
                   {detail.now.map((item, index) => (
                     <li key={index} className="flex items-start gap-3 text-gray-600 dark:text-gray-400">
                       <span className="text-emerald-500 mt-1.5">—</span>
@@ -49,7 +49,7 @@ export default function Home() {
             </FadeIn>
 
             <FadeIn delay={0.3}>
-              <div className="flex flex-wrap gap-3 pt-4">
+              <div className="flex flex-wrap gap-3 pt-2">
                 <Link
                   href="/projects"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-xl font-medium hover:bg-emerald-700 transition-colors duration-200 shadow-md hover:shadow-lg"
@@ -70,7 +70,7 @@ export default function Home() {
         </FadeIn>
 
         <FadeIn direction="right" delay={0.1}>
-          <div className="lg:sticky lg:top-20 space-y-5">
+          <div className="lg:sticky lg:top-20 space-y-7">
             <Avatar
               src="/main.png"
               alt={detail.name}
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
 
             <FadeIn delay={0.4}>
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <span className="section-label">Expertise</span>
                 <div className="flex flex-wrap gap-2 justify-center lg:justify-end">
                   {detail.expertise.map((item, index) => (
@@ -102,11 +102,11 @@ export default function Home() {
             </FadeIn>
 
             <FadeIn delay={0.5}>
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <span className="section-label">Tech Stack</span>
                 <div className="flex flex-wrap gap-2 justify-center lg:justify-end">
-                  {detail.stack.map((tech, index) => (
-                    <TagPill key={index}>{tech}</TagPill>
+                  {detail.stack.map((item, index) => (
+                    <TagPill key={index}>{item}</TagPill>
                   ))}
                 </div>
               </div>

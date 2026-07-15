@@ -48,12 +48,12 @@ function getExternalPosts(): Post[] {
   const externalPosts = (data.posts || []) as ExternalPost[]
 
   return externalPosts.map((post) => ({
-    slug: `external-${Buffer.from(post.url).toString('base64').slice(0, 10)}`,
+    slug: `external-${Buffer.from(post.url).toString('base64').replace(/[^a-zA-Z0-9]/g, '').slice(0, 50)}`,
     title: post.title,
     date: post.date,
     description: post.description,
     tags: post.tags,
-    readingTime: 0,
+    readingTime: post.readingTime || 0,
     content: '',
     externalUrl: post.url,
     platform: post.platform,

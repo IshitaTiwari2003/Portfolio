@@ -15,7 +15,7 @@ export interface SocialLinks {
 
 export interface ProjectDetail {
   title: string
-  category: 'open-source' | 'client' | 'side-project' | 'experiment'
+  category: 'open-source' | 'client' | 'side-project' | 'experiment' | 'academic-project'
   status: 'active' | 'archived' | 'open-source' | 'wip'
   description: string
   stack: string[]
@@ -29,6 +29,8 @@ export interface ExperienceDetail {
   startDate: string
   endDate: string
   achievements: string[]
+  link?: string
+  stack?: string[]
 }
 
 export interface PrincipleDetail {

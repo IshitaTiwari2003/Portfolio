@@ -1,6 +1,9 @@
 import { getPortfolioDetail } from '@/lib/detail'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { FadeIn, StaggerChildren, StaggerItem } from '@/components/ui/FadeIn'
+import { TagPill } from '@/components/ui/TagPill'
+import { ExternalLink } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Experience() {
   const detail = getPortfolioDetail()
@@ -54,6 +57,25 @@ export default function Experience() {
                   </li>
                 ))}
               </ul>
+
+              {(role.stack?.length || role.link) && (
+                <div className="mt-4 flex flex-wrap items-center gap-3">
+                  {role.stack?.map((tech, i) => (
+                    <TagPill key={i}>{tech}</TagPill>
+                  ))}
+                  {role.link && (
+                    <Link
+                      href={role.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600 dark:text-emerald-400 hover:underline"
+                    >
+                      View Project
+                      <ExternalLink size={14} />
+                    </Link>
+                  )}
+                </div>
+              )}
             </div>
           </StaggerItem>
         ))}

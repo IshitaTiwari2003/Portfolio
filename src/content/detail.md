@@ -1,115 +1,107 @@
 ---
 name: "Ishita Tiwari"
 role: "Data Science & ML Practitioner"
-tagline: "MCA from Manipal University Jaipur (May 2026)"
+tagline: "Aspiring Data Analyst turning curiosity about patterns into models that actually work."
 initials: "IT"
 
 about:
-- "I'm Ishita Tiwari — a data science and ML practitioner who completed her MCA from Manipal University Jaipur in May 2026."
+- "I'm Ishita Tiwari — I got into data science by chasing curiosity, not a checklist. I care less about a model's accuracy score and more about why it's right, or wrong."
 
-- "What pulled me toward machine learning is something I still find hard to shake: the idea that you can build a system that learns patterns the way the brain does — and then have it do something genuinely useful in the real world. Not just on a benchmark, but in actual decisions that affect people. That gap between a model and a meaningful outcome is where most of my thinking lives."
+- "I like building things end-to-end: a deep learning system that detects diabetic retinopathy (0.94 QWK), and a gait recognition model that identifies people by how they walk (91% accuracy). I've also co-authored a research paper, \"ANN-Based Predictive Model for Employee Attrition in an Organization,\" presented at an international conference on computing systems."
 
-- "My projects have tried to stay close to that. Gait recognition from behavioral data, predicting which employees are likely to leave and why, grading diabetic retinopathy severity from images — each one came with its own messy data, its own tradeoffs, and its own lesson about what 'working' actually means outside a notebook. My attrition prediction work was published at ComSIA 2026 in Delhi, which pushed me to explain the reasoning behind the model, not just the results."
-
-- "I work in Python and SQL day-to-day, with Scikit-learn, TensorFlow/Keras, Pandas, and Power BI as my main tools. I'm looking for roles where the problems are real and the data is messy — that's usually where the interesting work is."
+- "Right now, I'm looking for an entry-level role or internship in Data Analytics, Data Science, or Machine Learning — somewhere I can keep learning by building."
 
 now:
-  - "Looking for analyst or data science roles where I can work on real problems with real stakes."
-  - "Deepening my understanding of MLOps — how models are deployed, monitored, and maintained after the notebook closes."
-  - "Writing about the things I've learned building ML systems — especially the parts that don't show up in tutorials."
+  - "Writing on Medium about the gap between what a model scores and what a model actually gets right"
+  - "Deepening my grasp of deep learning architectures beyond CNNs — exploring transformers for vision tasks"
+  - "Practicing SQL and BI storytelling on public datasets to sharpen how I present findings, not just compute them"
 
 expertise:
   - "Machine Learning"
   - "Deep Learning"
-  - "Computer Vision"
   - "Natural Language Processing"
-  - "Full-Stack Development"
   - "Data Science"
 
 stack:
   - "Python"
   - "SQL"
   - "Scikit-learn"
-  - "TensorFlow/Keras"
+  - "PyTorch"
+  - "TensorFlow / Keras"
   - "Pandas"
-  - "Power BI"
   - "NumPy"
   - "Matplotlib"
-  - "Jupyter"
+  - "Tableau"
 
 social:
-  email: "ishita@example.com"
-  github: "https://github.com/ishita"
-  linkedin: "https://linkedin.com/in/ishita"
+  email: "ishitatiwari51@gmail.com"
+  github: "https://github.com/IshitaTiwari2003"
+  linkedin: "https://www.linkedin.com/in/ishitatiwari27"
   medium: ""
   twitter: ""
   website: ""
 
 projects:
   - title: "Diabetic Retinopathy Detection"
-    category: "open-source"
+    category: "academic-project"
     status: "active"
-    description: "Deep learning model for detecting diabetic retinopathy from retinal fundus images using CNN architecture with high accuracy."
-    stack: ["Python", "TensorFlow", "OpenCV", "Flask"]
-    github: "https://github.com/ishita/diabetic-retinopathy"
+    description: "Deep learning pipeline that classifies diabetic retinopathy severity (5 stages) from retinal fundus images, achieving a 0.94 Quadratic Weighted Kappa using a fine-tuned EfficientNet-B5 model."
+    stack: ["Python", "PyTorch", "OpenCV", "EfficientNet"]
+    github: "https://github.com/IshitaTiwari2003/diabetic-retinopathy-cnn"
 
-  - title: "Clinical Assistant Chatbot"
-    category: "side-project"
+  - title: "Gait Recognition System"
+    category: "academic-project"
     status: "active"
-    description: "AI-powered clinical assistant that helps with symptom analysis and preliminary diagnosis support using NLP."
-    stack: ["Python", "NLP", "Flask", "React"]
-    github: "https://github.com/ishita/clinical-assistant"
-
-  - title: "Portfolio Website"
-    category: "side-project"
-    status: "active"
-    description: "This portfolio website built with Next.js, Tailwind CSS, and TypeScript with a focus on performance and design."
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "MDX"]
-    github: "https://github.com/ishita/portfolio"
+    description: "Behavioral-biometrics system that identifies individuals from walking-pattern data across a 10,000+ record dataset, using an SVM classifier that reached 91% accuracy."
+    stack: ["Python", "Pandas", "Scikit-learn", "SVM"]
+    github: "https://github.com/IshitaTiwari2003"
 
 experience:
-  - company: "AI Research Intern"
-    role: "Machine Learning Intern"
-    startDate: "Jun 2024"
-    endDate: "Aug 2024"
-    achievements:
-      - "Developed CNN models for medical image classification achieving 94% accuracy"
-      - "Implemented data preprocessing pipelines for large-scale medical datasets"
-      - "Collaborated with research team on model optimization and deployment"
-
-  - company: "Freelance"
-    role: "Full-Stack Developer"
-    startDate: "Jan 2023"
+  - company: "Data Visualization Intern"
+    role: "Infosys Springboard 7.0, Batch 1"
+    startDate: "July 2026"
     endDate: "Present"
     achievements:
-      - "Built and deployed full-stack web applications for various clients"
-      - "Developed machine learning solutions for data analysis tasks"
-      - "Created responsive, accessible interfaces with modern frameworks"
+      - "Building \"EduVision_DV,\" a Tableau-based analytics suite for benchmarking global university rankings, research output, and student diversity using QS World University Rankings and Times Higher Education datasets"
+      - "Handling end-to-end data workflow — collection, cleaning, and KPI engineering (Global Ranking Score, Research Impact Score, Faculty-to-Student Ratio, and more) — using Python and Pandas"
+      - "Developing four interconnected interactive dashboards (University Overview, Research Analytics, Student Analytics, Country Comparison) with filters, parameters, and dashboard actions in Tableau"
+    link: "https://github.com/springboardmentor09876x-cmd/higher-education-dv/tree/ishita-tiwari"
+    stack: ["Python", "Pandas", "NumPy", "Tableau"]
 
 principles:
-  - title: "Clarity Over Cleverness"
-    body: "The best code is the code your team can reason about at 2am during an incident."
-  - title: "Build in Public"
-    body: "Writing about what you build accelerates your thinking and helps the community around you."
-  - title: "Data-Driven Decisions"
-    body: "Let the data guide your choices. Good ML is about thoughtful experimentation, not guesswork."
-  - title: "Ship and Iterate"
-    body: "Perfect is the enemy of good. Get it working, get feedback, then make it better."
+  - title: "Numbers Aren't the Whole Story"
+    body: "A high accuracy score means nothing until I've checked what the model gets wrong."
+  - title: "Learn by Building"
+    body: "I understand a concept once I've broken it on real data and had to fix it."
+  - title: "Clarity Over Complexity"
+    body: "A dashboard or model only works if someone else can understand it."
+  - title: "Write What I Learn"
+    body: "Explaining something in writing is how I find out if I actually understood it."
 
 posts:
-  - title: "Building in Public: What I Learned"
-    date: "2024-11-12"
-    description: "Sharing the process before the product is done."
-    tags: ["process", "open-source"]
-    url: "https://medium.com/@ishita/building-in-public"
+  - title: "The Day I Realized a Machine Watches You Walk More Carefully Than You Ever Will"
+    date: "2026-07-12"
+    description: "What building a gait recognition system taught me about how a machine actually 'sees' — frame by frame, stripped of color, patient in a way humans aren't."
+    tags: ["gait-recognition", "computer-vision", "ml"]
+    url: "https://medium.com/@ishitatiwari51/the-day-i-realized-a-machine-watches-you-walk-more-carefully-than-you-ever-will-5ebc242ef259"
     platform: "medium"
+    readingTime: 7
 
-  - title: "Getting Started with TensorFlow"
-    date: "2024-10-28"
-    description: "A beginner's guide to building your first neural network."
-    tags: ["tensorflow", "python", "ml"]
-    url: "https://linkedin.com/pulse/getting-started-tensorflow"
-    platform: "linkedin"
+  - title: "My Model Scored 93%. My Gut Said Something Was Wrong. My Gut Was Right."
+    date: "2026-07-04"
+    description: "A strong QWK score was hiding a model that failed on the most dangerous disease stage. The story of finding that, and fixing it with ensembling and threshold optimization."
+    tags: ["diabetic-retinopathy", "model-evaluation", "ensembling"]
+    url: "https://medium.com/@ishitatiwari51/my-model-scored-93-my-gut-said-something-was-wrong-my-gut-was-right-a52d77350523"
+    platform: "medium"
+    readingTime: 5
+
+  - title: "From a 'Buzzword' to a 'Direction' — How AI Pulled Me Into the World of Data"
+    date: "2026-06-28"
+    description: "How a word I kept hearing everywhere turned into an actual career direction — and what I'd tell someone starting from the same uncertain place I did."
+    tags: ["ai", "data-science", "career"]
+    url: "https://medium.com/@ishitatiwari51/from-a-buzzword-to-a-direction-how-ai-pulled-me-into-the-world-of-data-c11e5a976b81"
+    platform: "medium"
+    readingTime: 4
 ---
 
 This portfolio showcases my journey in AI and software development. Feel free to explore my projects and get in touch.

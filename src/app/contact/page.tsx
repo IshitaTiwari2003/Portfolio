@@ -64,8 +64,8 @@ export default function Contact() {
 
               <div className="border-t border-gray-200/50 dark:border-gray-800/50 pt-6">
                 <a
-                  href="/resume.pdf"
-                  download
+                  href="/Ishita_Tiwari_Resume_Latest_2026_D.pdf"
+                  download="Ishita_Tiwari_Resume.pdf"
                   className="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-600 text-white rounded-xl font-medium hover:bg-emerald-700 transition-colors duration-200 shadow-md hover:shadow-lg"
                 >
                   <Download size={16} />

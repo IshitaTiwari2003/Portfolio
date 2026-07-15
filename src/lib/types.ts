@@ -51,4 +51,5 @@ export interface ExternalPost {
   tags: string[]
   url: string
   platform: 'medium' | 'linkedin' | 'devto' | 'hashnode' | 'other'
+  readingTime?: number
 }

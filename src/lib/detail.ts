@@ -2,6 +2,8 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
+
+
 export interface SocialLinks {
   email: string
   github: string
@@ -74,12 +76,22 @@ export interface PortfolioDetail {
 const detailPath = path.join(process.cwd(), 'src/content/detail.md')
 const linkPath = path.join(process.cwd(), 'src/content/link.md')
 
+console.log("CWD:", process.cwd());
+console.log("DETAIL PATH:", detailPath);
+console.log("DETAIL EXISTS:", fs.existsSync(detailPath));
+
 function readFileIfExists(filePath: string): { data: Record<string, unknown>; content: string } | null {
+
+  console.log("CWD:", process.cwd());
+  console.log("Trying:", filePath);
+  console.log("Exists:", fs.existsSync(filePath));
+
   if (!fs.existsSync(filePath)) {
-    return null
+    return null;
   }
-  const fileContents = fs.readFileSync(filePath, 'utf8')
-  return matter(fileContents)
+
+  const fileContents = fs.readFileSync(filePath, "utf8");
+  return matter(fileContents);
 }
 
 export function getPortfolioDetail(): PortfolioDetail | null {

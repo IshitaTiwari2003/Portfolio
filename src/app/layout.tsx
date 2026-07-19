@@ -17,8 +17,18 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata = {
-  title: 'Ishita Tiwari — AI & Full-Stack Engineer',
-  description: 'Personal portfolio of Ishita Tiwari, an AI and full-stack engineer building intelligent systems and web applications.',
+  title: 'Ishita Tiwari — Data Analyst & ML Enthusiast',
+  description: 'Aspiring Data Analyst and ML enthusiast, turning raw data into models, dashboards, and decisions that matter.',
+  openGraph: {
+    title: 'Ishita Tiwari — Data Analyst & ML Enthusiast',
+    description: 'Aspiring Data Analyst and ML enthusiast, turning raw data into models, dashboards, and decisions that matter.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image' as const,
+    title: 'Ishita Tiwari — Data Analyst & ML Enthusiast',
+    description: 'Aspiring Data Analyst and ML enthusiast, turning raw data into models, dashboards, and decisions that matter.',
+  },
 }
 
 export default function RootLayout({

@@ -52,41 +52,10 @@ export default function Certificates() {
       <FadeIn>
         <SectionHeader
           label="Certificates"
-          title="Professional certifications"
-          description="Courses and certifications I've completed to deepen my skills."
+          title="Certificates & Publications"
+          description="Research work and professional certifications I've earned."
         />
       </FadeIn>
-
-      <StaggerChildren className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
-        {certificates.map((cert, index) => (
-          <StaggerItem key={index}>
-            <GlassCard variant="hover" className="p-6 h-full flex flex-col">
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                {cert.title}
-              </h3>
-              <div className="mt-auto flex items-center gap-3">
-                <a
-                  href={`/${encodeURIComponent(cert.file)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600 dark:text-emerald-400 hover:underline"
-                >
-                  View
-                  <ExternalLink size={14} />
-                </a>
-                <a
-                  href={`/${encodeURIComponent(cert.file)}`}
-                  download
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-200"
-                >
-                  Download
-                  <Download size={14} />
-                </a>
-              </div>
-            </GlassCard>
-          </StaggerItem>
-        ))}
-      </StaggerChildren>
 
       <FadeIn delay={0.2}>
         <div className="mt-16">
@@ -127,6 +96,49 @@ export default function Certificates() {
             </div>
           </GlassCard>
         </StaggerItem>
+      </StaggerChildren>
+
+      <FadeIn>
+        <div className="mt-16">
+          <span className="section-label">Certificates</span>
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900 dark:text-gray-100 mt-2">
+            Professional certifications
+          </h2>
+          <p className="text-gray-500 dark:text-gray-400 leading-relaxed mt-2">
+            Courses and certifications I've completed to deepen my skills.
+          </p>
+        </div>
+      </FadeIn>
+
+      <StaggerChildren className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+        {certificates.map((cert, index) => (
+          <StaggerItem key={index}>
+            <GlassCard variant="hover" className="p-6 h-full flex flex-col">
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                {cert.title}
+              </h3>
+              <div className="mt-auto flex items-center gap-3">
+                <a
+                  href={`/${encodeURIComponent(cert.file)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600 dark:text-emerald-400 hover:underline"
+                >
+                  View
+                  <ExternalLink size={14} />
+                </a>
+                <a
+                  href={`/${encodeURIComponent(cert.file)}`}
+                  download
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-200"
+                >
+                  Download
+                  <Download size={14} />
+                </a>
+              </div>
+            </GlassCard>
+          </StaggerItem>
+        ))}
       </StaggerChildren>
     </div>
   )

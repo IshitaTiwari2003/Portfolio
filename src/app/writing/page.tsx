@@ -30,7 +30,7 @@ export default function Writing() {
         <SectionHeader
           label="Writing"
           title="Thoughts and insights"
-          description="Writing about software, AI, and the craft of building things."
+          description="Writing about data, AI, and the craft of building models."
         />
       </FadeIn>
 

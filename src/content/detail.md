@@ -79,6 +79,14 @@ principles:
     body: "Explaining something in writing is how I find out if I actually understood it."
 
 posts:
+  - title: "We Are Building Minds That Think. We Are Losing Minds That Feel."
+    date: "2026-07-19"
+    description: "AI can now detect disease and recognize how you walk — but the more we outsource our thinking to it, the more we risk losing the cognitive struggle that builds real intelligence."
+    tags: ["ai", "neuroscience", "critical-thinking"]
+    url: "https://medium.com/@ishitatiwari51/we-are-building-minds-that-think-we-are-losing-minds-that-feel-c2562b8e35e6"
+    platform: "medium"
+    readingTime: 7
+
   - title: "The Day I Realized a Machine Watches You Walk More Carefully Than You Ever Will"
     date: "2026-07-12"
     description: "What building a gait recognition system taught me about how a machine actually 'sees' — frame by frame, stripped of color, patient in a way humans aren't."
